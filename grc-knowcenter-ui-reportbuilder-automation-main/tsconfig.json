@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "types": [
+            "node",
+            "webdriverio/async",
+            "@wdio/cucumber-framework",
+            "expect-webdriverio"
+        ],
+        "target": "ES6",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "outDir": "./dist",
+        "skipLibCheck": true,
+    },
+    "include": [
+        "test/**/*.ts",
+        "page-objects/**/*.ts",
+        "config-providers/**/*.ts",
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "./node_modules",
+        "./node_modules/*",
+        "./node_modules/@types/node/index.d.ts"
+    ]
+}
